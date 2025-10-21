@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container-sm mt-5 border border-success rounded-5">
+        <h1 class="text-center">To do App</h1>
+       <form id="form">
+            <div class="mb-3">
+                <label for="textArea" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title">
+            </div>
+            <div class="mb-3">
+                <label for="textArea" class="form-label">Add your task</label>
+                <input type="text" class="form-control" id="textArea">
+            </div>
+            <div class="mb-3">
+                <label for="dateSelect" class="form-label">Select your deadline</label>
+                <input type="date" class="form-control" id="dateSelect">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button id="submitBtn" type="submit" class="btn btn-outline-success btn-lg">Submit</button>
+            </div>
+       </form>
+       <div class="d-grid gap-2 col-6 mx-auto my-3">
+                <button id="ClearBtn" class="btn btn-outline-danger btn-lg">Clear All</button>
+            </div> 
+
+       <div id="tasks">
+            <div style="display:none" class="task container mt-3 p-3 border border-dark rounded-5">
+                <h1>Tytuł</h1>
+                <div class="border border-dark rounded-5">
+                    <p id="ta
+                    skText" class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dolorem!</p>
+                </div>
+                <h4>Time left: <span class="timeLeft">10 days</span></h4>
+                <button type="button" id="deleteBtn" class="btn mt btn-danger">Delete</button>
+            </div>
+       </div>
+       
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
